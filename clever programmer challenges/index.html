@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-1">
+            <div>
+                <h1>1st Challenge :<br> Your age in days</h1>
+            </div>
+            <div class="flex-box-container-1">
+                <button class="btn btn-primary btn-sm" onclick="ageInDays()">check</button>
+                <button class="btn btn-danger btn-sm" onclick="resetAge()">reset</button>
+            </div>
+            <div id="result"></div>
+    </div>
+
+    <div class="container-2">
+        <div>
+            <h1>2nd Challenge : <br> Cat Generator</h1>
+            <button onclick="generate()" class="btn btn-success">Generate Cat</button>
+        </div>
+        <div class="flex-box-container-2" id="div-cat">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div>
+            <h1>3rd Challenge : <br> Rock, Paper, Scissors</h1>
+        </div>
+        <div class="flex-box-container-3 container" id="div-cat">
+            <div class="row">
+                <div class="col" id="col-left">
+                    <img onclick="score(this)" id="rock" src="http://clipart-library.com/images_k/rock-clipart-transparent/rock-clipart-transparent-2.png" alt="">
+                </div>
+                <div class="col" id="col-mid">
+                    <img onclick="score(this)" id="paper" src="http://clipart-library.com/data_images/64750.jpg" alt="">
+                </div>
+                <div class="col" id="col-right">
+                    <img onclick="score(this)" id="scissor" src="http://clipart-library.com/images/BiaKrBBBT.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-4">
+        <div>
+            <h2>4rd Challenge : <br>Change the Color of All Buttons</h2>
+        </div>
+        <div class="flex-box-container-4">
+            <select name="color" id="buttonColor" onclick="changeColorButton(this)">
+                <option value="random">random</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="reset">reset</option>
+            </select>
+            <button class="btn btn-danger">red</button>
+            <button class="btn btn-primary">blue</button>
+            <button class="btn btn-warning">yellow</button>
+            <button class="btn btn-dark">dark</button>
+        </div>
+    </div>
+    <div class="container-5">
+        <div>
+            <h2>5rd Challenge : <br>BlackJack</h2>
+            <h3><span id="status">
+                Let's play
+            </span></h3>
+        </div>
+        <div class="flex-box-container-5">
+            <div class="col-lg-6 col-md-12" id="your-box">
+                <h3>You : <span id="your-result">0</span></h3>
+            </div>
+            <div class="col-lg-6 col-md-12" id="dealer-box">
+                <h3>Dealer : <span id="dealer-result">0</span></h3>
+            </div>
+            <div class="col-12">
+                <div class="button">
+                    <button class="btn btn-primary" id="bj-hit" onclick="hit()">Hit</button>
+                    <button class="btn btn-warning" id="bj-stand" onclick="stand()">Stand</button>
+                    <button class="btn btn-danger" id="bj-deal" onclick="deal()">Deal</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-result">
+            <table border="1">
+                <tr>
+                    <th>Wins</th>
+                    <th>losses</th>
+                    <th>Deal</th>
+                </tr>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="losses">0</td>
+                    <td id="deals">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
