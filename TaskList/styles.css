@@ -1,0 +1,13 @@
+.collection
+{
+    padding: 0%;
+}
+
+.collection-item
+{
+    border-bottom: 1px solid grey;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
