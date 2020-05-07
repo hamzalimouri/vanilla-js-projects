@@ -1,0 +1,5 @@
+.result , .loading
+{
+    display: none;
+    margin: 10px;
+}
