@@ -1,0 +1,16 @@
+.container
+{
+    width: 75%;
+}
+tr
+{
+    border-bottom: 1px solid grey;
+}
+td
+{
+    padding: 10px;
+}
+input[type=submit]
+{
+    margin-bottom: 15px;
+}
