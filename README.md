@@ -1,3 +1,3 @@
-# JS-Challenges
+# Vanilla js projects
 
-## Basic projects for practice JavaScript
+## projects for practice vanilla JavaScript
